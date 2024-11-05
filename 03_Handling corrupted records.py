@@ -122,12 +122,12 @@ employee_df.show(truncate=False)
 
 # COMMAND ----------
 
-# MAGIC %fs ls 'dbfs:/FileStore/tables/bad_records/20240925T025810/bad_records'
+# MAGIC %fs ls 'dbfs:/FileStore/tables/bad_records/20241022T053015/bad_records/'
 
 # COMMAND ----------
 
 # creating a dataframe to view stored bad records 
-bad_records_df = spark.read.format("json").load("dbfs:/FileStore/tables/bad_records/20240917T065221/bad_records/")
+bad_records_df = spark.read.format("json").load("dbfs:/FileStore/tables/bad_records/20241022T053015/bad_records/")
 ## bad_records_df.display()
 bad_records_df.show(truncate=False)
 

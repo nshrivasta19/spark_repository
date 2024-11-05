@@ -5,7 +5,7 @@ spark
 # COMMAND ----------
 
 # spark code to read file
-spark.read.csv("dbfs:/FileStore/tables/flight_data.csv",header="true").show()
+spark.read.csv("dbfs:/FileStore/tables/flight_data.csv",header="true").show()lo
 
 # COMMAND ----------
 
@@ -36,7 +36,7 @@ flight_df_header.printSchema()
 
 # COMMAND ----------
 
-## we are updating inferschema condition "true" in spark code because it is taking all the column values as string while count is integer datatype. By using Inferschema, it will read the schema of the csv and infer it
+## we are updating inferschema condition "true" in spark code because it is taking all the column values as string while count is integer datatype. By using inferSchema, it will read the schema of the csv and infer it
 flight_df_header_schema = spark.read.format("csv")\
             .option("header", "true")\
             .option("inferSchema", "true")\
