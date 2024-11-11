@@ -4,8 +4,21 @@ spark
 
 # COMMAND ----------
 
+File uploaded to /FileStore/tables/corrupted_json.json
+File uploaded to /FileStore/tables/employee.csv
+File uploaded to /FileStore/tables/flight_data.csv
+File uploaded to /FileStore/tables/employee_new.csv
+File uploaded to /FileStore/tables/line_delimited_json.json
+File uploaded to /FileStore/tables/line_delimited_records.json
+File uploaded to /FileStore/tables/Multi_line_incorrect.json
+File uploaded to /FileStore/tables/Multi_line_correct.json
+File uploaded to /FileStore/tables/single_file_json_with_extra_fields.json
+File uploaded to /FileStore/tables/zomato_file5.json
+
+# COMMAND ----------
+
 # spark code to read file
-spark.read.csv("dbfs:/FileStore/tables/flight_data.csv",header="true").show()lo
+spark.read.csv("dbfs:/FileStore/tables/flight_data.csv",header="true").show()
 
 # COMMAND ----------
 

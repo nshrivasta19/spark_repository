@@ -37,7 +37,7 @@ spark.read.format("json")\
 .load("dbfs:/FileStore/tables/Multi_line_correct.json")\
 .show()
 
-# this code throws analysis exception since we have not enabled multiline option here, which is by default fault.
+# this code throws analysis exception since we have not enabled multiline option here, which is by default false.
 
 # COMMAND ----------
 
